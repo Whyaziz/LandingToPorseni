@@ -2,10 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'rock-bont';
+  src: url('/fonts/Rockwell-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --btn-primary: #911002;
+  --btn-hover: #911002;
+  --text-color: #762B00;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +23,9 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --btn-primary: #911002;
+    --btn-hover: #911002;
+    --text-color: #762B00;
   }
 }
 
@@ -24,4 +37,18 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.btn-cust {
+  background: var(--btn-primary);
+  border-radius: 8px;
+}
+
+.btn-cust-hover {
+  background: var(--btn-hover);
+  border-radius: 8px;
+}
+
+.text-brown{
+  color: var(--text-color);
 }
