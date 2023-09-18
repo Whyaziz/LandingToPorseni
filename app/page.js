@@ -69,10 +69,12 @@ export default function Home() {
             style={{fontFamily: 'rock-bold', color:{text}}}>
               DAFTARKAN ATLET TERBAIKMU SEKARANG
             </p>
-            <button
-            className='btn-cust flex h-14 w-60 mt-5 items-center justify-center text-base font-bold hover:text-sm'>
-              <a href='#'>DAFTAR SEKARANG</a>
-            </button>
+            <a href='#'>
+              <button
+              className='btn-cust flex h-14 w-60 mt-5 items-center justify-center text-base font-bold hover:text-sm'>
+                DAFTAR SEKARANG
+              </button>
+            </a>
           </div>
           <img
           className='hidden h-[450px] lg:flex'
@@ -89,10 +91,12 @@ export default function Home() {
             style={{fontFamily: 'rock-bold'}}>
               DAFTARKAN ATLET TERBAIKMU SEKARANG
             </p>
+            <a href='#'>
             <button 
             className='btn-cust mt-4 h-7 w-36 text-xs font-semibold hover:text-[10px]'>
-              <a href='#'>DAFTAR SEKARANG</a>
+              DAFTAR SEKARANG
             </button>
+            </a>
           </div>
           <img
           className='h-[450px] -mt-10 lg:hidden'
